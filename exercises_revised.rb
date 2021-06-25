@@ -103,14 +103,14 @@ end
 
 # See class definitions above for data structure.
 
-# 1a. Display the names of the shops
+# Todo List:
+#Todo[x]  1a. Display the names of the shops
 Shop.names
-# 1b. Display the sum of the shop's fulfilled orders after the name
+#Todo[x]  1b. Display the sum of the shop's fulfilled orders after the name
 Shop.fulfilled
-# 2. Display the name of the shop that has the largest unfulfilled order
+#Todo[x]  2. Display the name of the shop that has the largest unfulfilled order
 Shop.biggest_unfulfilled
-# 3. Display the name of the shop that had the least orders in May of 2021
+#Todo[x]  3. Display the name of the shop that had the least orders in May of 2021
 Shop.least_sales_by_month_year(5, 2021)
-# Put your code here
 
 binding.pry

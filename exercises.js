@@ -45,12 +45,14 @@ const allOrders = [
 
 // See class definitions above for data structure.
 
-// 1a. Display the names of the shops
+//Todo List:
+
+//Todo[x] 1a. Display the names of the shops
 (function shopNames() {
   allShops.forEach((shop) => console.log(shop.name));
 })();
 
-// 1b. Display the sum of the shop's fulfilled orders after the name
+//Todo[x] 1b. Display the sum of the shop's fulfilled orders after the name
 function shopNamesAndFulfilledOrders(orders, shops) {
   const nameSum =shops.map((shop) => {
     const name = shop.name;
@@ -67,7 +69,7 @@ function shopNamesAndFulfilledOrders(orders, shops) {
 }
 console.log(shopNamesAndFulfilledOrders(allOrders, allShops));
 
-// 2. Display the name of the shop that has the largest unfulfilled order
+//Todo[x] 2. Display the name of the shop that has the largest unfulfilled order
 function largestUnfulfilled(orders, shops) {
   const unfulfilled = orders.filter((order) => !order.fulfilled);
   const largestUnfulfilled = unfulfilled.reduce((prev, current) => {
@@ -79,7 +81,7 @@ function largestUnfulfilled(orders, shops) {
 
 console.log( largestUnfulfilled(allOrders, allShops));
 
-// 3. Display the name of the shop that had the least orders in May
+//Todo[x] 3. Display the name of the shop that had the least orders in May
 const frequencyCounter = function (arr) {
   const map = arr.reduce(
     (acc, e) => acc.set(e.shopId, (acc.get(e.shopId) || 0) + 1),
@@ -100,4 +102,4 @@ const leastOrders = (orders, shops) => {
 };
 
 console.log(leastOrders(allOrders, allShops));
-// Put your code here
+
